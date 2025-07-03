@@ -34,6 +34,7 @@ const SignUp = () => {
       return;
     }
     setError('');
+    //signup api call
   }
 
   return (
@@ -71,14 +72,6 @@ const SignUp = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              {
-                <span onClick={() => setShowPassword(!showPassword)} style={{ cursor: 'pointer' }}>
-                  {showPassword ? 
-                    <FaRegEye size={22} className='text-primary' /> :  
-                    <FaRegEyeSlash size={22} className='text-primary' />
-                  }
-                </span>
-              }
             </div>
             {error && <p className='text-red-600 py-2 text-sm'>{error}</p>}
             <button type='submit' className='btn-primary cursor-pointer'>

@@ -28,6 +28,7 @@ const Login = ({ }) => {
       return;
     }
     setError('');
+    // API call to login
   }
   return (
     <AuthLayout>
