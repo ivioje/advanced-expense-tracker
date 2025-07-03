@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../components/layouts/AuthLayout'
-import Input from '../../components/Input'
+import Input from '../../components/auth/Input'
 import { Link, useNavigate } from 'react-router-dom'
 import { validateEmail } from '../../utils/helper'
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa'
-import ProfilePhotoSelector from '../../components/ProfilePhotoSelector'
+import ProfilePhotoSelector from '../../components/auth/ProfilePhotoSelector'
 
 const SignUp = () => {
   const [profilePicture, setProfilePicture] = useState(null);

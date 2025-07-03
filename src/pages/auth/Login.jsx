@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import AuthLayout from '../../components/layouts/AuthLayout'
-import Input from '../../components/Input'
+import Input from '../../components/auth/Input'
 import { Link, useNavigate } from 'react-router-dom'
 import { validateEmail } from '../../utils/helper'
 
